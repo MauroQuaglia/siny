@@ -1,13 +1,18 @@
 version: '3.4'
 services:
   app:
+    image: "siny:test"
     build:
       context: .
     ports:
       - "4567:4567"
     volumes:
+      - .:/app
       - /tmp/siny:/app/log
+      - gemset:/usr/local/bundle/
     networks:
       net:
 networks:
   net:
+volumes:
+  gemset:
