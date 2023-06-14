@@ -9,10 +9,10 @@ services:
     volumes:
       - .:/app
       - /tmp/siny:/app/log
-      - gemset:/usr/local/bundle/
+      - bundler_gems:/usr/local/bundle/
     networks:
       net:
 networks:
   net:
 volumes:
-  gemset:
+  bundler_gems:
