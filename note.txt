@@ -1,0 +1,2 @@
+Se anche metto il file .ruby-gemset non crea nulla.
+Nessun gemset, perché gli serve una versione di ruby non remota per farlo.

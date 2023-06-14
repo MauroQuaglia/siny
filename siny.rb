@@ -12,5 +12,10 @@ class Siny < Sinatra::Base
     file = File.read('./log/siny.log')
     "Logs: #{file}"
   end
+
+  get '/db' do
+    file = File.read('./db.txt')
+    "DB: #{file}"
+  end
 end
 
